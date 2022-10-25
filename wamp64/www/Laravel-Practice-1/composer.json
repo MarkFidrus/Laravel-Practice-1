@@ -11,7 +11,8 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "laravelcollective/html": "6.*",
-        "laravel/ui": "v3.4.6"
+        "laravel/ui": "v3.4.6",
+        "bkwld/laravel-pug": "2.3.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -59,7 +60,9 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
-            "pestphp/pest-plugin": true
+            "pestphp/pest-plugin": true,
+            "pug/installer": true,
+            "nodejs-php-fallback/nodejs-php-fallback": true
         }
     },
     "minimum-stability": "dev",

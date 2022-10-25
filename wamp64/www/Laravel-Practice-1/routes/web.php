@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', '\App\Http\Controllers\HomeController@index');
+Route::get('/', '\App\Http\Controllers\Controller@index');
 
 Route::resource('gallery', '\App\Http\Controllers\GalleryController');
+
+Route::get('/galleries', '\App\Http\Controllers\GalleryController@galleries');
+
 Route::get('/gallery/create', '\App\Http\Controllers\GalleryController@create');
 Route::post('/gallery/create', '\App\Http\Controllers\GalleryController@store');
 
@@ -38,3 +42,7 @@ Route::post('/photo/edit/{id}', '\App\Http\Controllers\GalleryController@set');
 Route::resource('profile', '\App\Http\Controllers\ProfileController');
 Route::get('/profile/show/{id}', '\App\Http\Controllers\PhotoController@show');
 
+
+Auth::routes();
+
+Route::get('/home', '\App\Http\Controllers\Controller@index');
