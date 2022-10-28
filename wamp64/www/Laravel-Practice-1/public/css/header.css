@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+* {
+  font-family: 'Poppins', 'sans-serif';
+  margin: 0;
+  padding: 0;
+}
+.header-navigation-menu {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  padding: 40px 30px;
+}
+.header-navigation-menu-item {
+  position: absolute;
+  padding: 5px 5px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.header-navigation-menu-item-icon {
+  margin: 0 10px 0 0;
+}
+.header-navigation-menu-item:hover {
+  border: 2px solid #fff;
+  padding: 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.header-navigation-menu-item#galleriesHeaderBtn,
+.header-navigation-menu-item#loginHeaderBtn,
+.header-navigation-menu-item#registerHeaderBtn,
+.header-navigation-menu-item#logoutHeaderBtn {
+  top: 30px;
+}
+.header-navigation-menu-item#galleriesHeaderBtn {
+  right: 400px;
+}
+.header-navigation-menu-item#galleriesHeaderBtn:hover {
+  right: 390px;
+}
+.header-navigation-menu-item#loginHeaderBtn,
+.header-navigation-menu-item#loginHeaderBtn {
+  right: 260px;
+}
+.header-navigation-menu-item#loginHeaderBtn:hover,
+.header-navigation-menu-item#loginHeaderBtn:hover,
+.header-navigation-menu-item#loginHeaderBtn:focus,
+.header-navigation-menu-item#loginHeaderBtn:focus {
+  right: 250px;
+}
+.header-navigation-menu-item#registerHeaderBtn,
+.header-navigation-menu-item#logoutHeaderBtn {
+  right: 90px;
+}
+.header-navigation-menu-item#registerHeaderBtn:hover,
+.header-navigation-menu-item#logoutHeaderBtn:hover,
+.header-navigation-menu-item#registerHeaderBtn:focus,
+.header-navigation-menu-item#logoutHeaderBtn:focus {
+  right: 80px;
+}
+.header-navigation-menu-item#loginHeaderBtn:hover,
+.header-navigation-menu-item#loginHeaderBtn:focus,
+.header-navigation-menu-item#registerHeaderBtn:hover,
+.header-navigation-menu-item#registerHeaderBtn:focus {
+  color: #fff;
+  background-color: #0077ff;
+  border: 2px solid #0077ff;
+}
+.header-navigation-menu-item#logoutHeaderBtn:hover,
+.header-navigation-menu-item#logoutHeaderBtn:focus {
+  color: #e30000;
+  border: 2px solid #e30000;
+}
+.header-navigation-brand {
+  position: absolute;
+  display: flex;
+  top: 30px;
+  left: 30px;
+  color: #fff;
+  border: 3px solid #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.header-navigation-brand-icon {
+  font-size: 30px;
+  transition: 0.5s;
+}
+.header-navigation-brand-text {
+  font-size: 20px;
+  opacity: 0;
+  letter-spacing: -10px;
+  margin: 0;
+  transition: 0.5s;
+}
+.header-navigation-brand:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
+.header-navigation-brand:hover .header-navigation-brand-icon {
+  color: #0077ff;
+  transition: 0.5s;
+}
+.header-navigation-brand:hover .header-navigation-brand-text {
+  margin: 0 0 0 5px;
+  opacity: 1;
+  letter-spacing: 0;
+  color: #0077ff;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=header.css.map */

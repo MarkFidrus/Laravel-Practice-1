@@ -6,5 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/'.$cssName.'.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/alert_message.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}" type="text/css">
     <title>Laravel Practice - {{ $title }}</title>
 </head>

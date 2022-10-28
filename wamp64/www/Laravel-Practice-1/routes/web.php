@@ -15,38 +15,40 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['middleware' => 'web'], function () {
-    Route::get('/', '\App\Http\Controllers\Controller@index');
+    Route::get('/', '\App\Http\Controllers\Controller@index')->name('home');
 
     Route::resource('gallery', '\App\Http\Controllers\GalleryController');
 
-    Route::get('/galleries', '\App\Http\Controllers\GalleryController@index');
+    Route::get('/galleries', '\App\Http\Controllers\GalleryController@index')->name('galleries');
 
-    Route::get('/gallery/create', '\App\Http\Controllers\GalleryController@create');
+    Route::get('/gallery/create', '\App\Http\Controllers\GalleryController@create')->name('create_gallery');
     Route::post('/gallery/create', '\App\Http\Controllers\GalleryController@store');
 
-    Route::get('/gallery/show/{id}', '\App\Http\Controllers\GalleryController@show');
+    Route::get('/gallery/show/{id}', '\App\Http\Controllers\GalleryController@show')->name('show_gallery');
 
-    Route::get('/gallery/edit/{id}', '\App\Http\Controllers\GalleryController@edit');
+    Route::get('/gallery/edit/{id}', '\App\Http\Controllers\GalleryController@edit')->name('edit_gallery');
     Route::post('/gallery/edit/{id}', '\App\Http\Controllers\GalleryController@set');
 
 
     Route::resource('photo', '\App\Http\Controllers\PhotoController');
-    Route::get('/photo/upload', '\App\Http\Controllers\PhotoController@upload');
+    Route::get('/photo/upload', '\App\Http\Controllers\PhotoController@upload')->name('upload_photo');
     Route::post('/photo/upload', '\App\Http\Controllers\PhotoController@store');
 
-    Route::get('/photo/show/{id}', '\App\Http\Controllers\GalleryController@show');
+    Route::get('/photo/show/{id}', '\App\Http\Controllers\GalleryController@show')->name('show_photo');
 
-    Route::get('/photo/edit/{id}', '\App\Http\Controllers\GalleryController@edit');
+    Route::get('/photo/edit/{id}', '\App\Http\Controllers\GalleryController@edit')->name('edit_photo');
     Route::post('/photo/edit/{id}', '\App\Http\Controllers\GalleryController@set');
 
 
     Route::resource('profile', '\App\Http\Controllers\ProfileController');
-    Route::get('/profile/show/{id}', '\App\Http\Controllers\PhotoController@show');
-
+    Route::get('/profile/show/{id}', '\App\Http\Controllers\PhotoController@show')->name('profile');
 
     Auth::routes();
 
-    Route::get('/home', '\App\Http\Controllers\Controller@index');
+    Route::get('/logout','\App\Http\Controllers\Auth\LoginController@logout');
 });
+
+
+
 
 
