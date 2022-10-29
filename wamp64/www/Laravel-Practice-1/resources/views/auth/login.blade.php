@@ -12,7 +12,7 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
             <div class="login__container-content-header">
-                <h1 class="login__container-content-header-title">{{ __('LOGIN') }}</h1>
+                <h1 class="login__container-content-header-title">{{ __('Login') }}</h1>
             </div>
             <div class="login__container-content-body">
                 <div class="login__container-content-body-email__field">
@@ -32,8 +32,14 @@
             <div class="login__container-content-footer">
                 <div class="login__container-content-footer-row__1">
                     <div class="login__container-content-footer-row__1-remember__field">
-                        <input class="login__container-content-footer-row__1-remember__field-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                        <label class="login__container-content-footer-row__1-remember__field-label" for="remember">{{ __('Remember Me') }}</label></div>
+                        <label class="login__container-content-footer-row__1-remember__field-label__1">
+                            <input class="login__container-content-footer-row__1-remember__field-label__1-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                            <div class="login__container-content-footer-row__1-remember__field-label__1-slider">
+                                <div class="login__container-content-footer-row__1-remember__field-label__1-slider-knob"></div>
+                            </div>
+                        </label>
+
+                        <label class="login__container-content-footer-row__1-remember__field-label__2" for="remember">{{ __('Remember Me') }}</label></div>
                     <div class="login__container-content-footer-row__1-reset__password__field">
                         @if (Route::has('password.request'))
                             <a class="login__container-content-footer-row__1-reset__password__field-link" href="{{ route('password.request') }}">
@@ -46,7 +52,6 @@
                 <div class="login__container-content-footer-row__2">
                     <p class="login__container-content-footer-row__2-text">{{__("Don't have an account ?")}}</p>
                     <a class="login__container-content-footer-row__2-link" href="/register">{{ __('Create account') }}<i class="login__container-content-footer-row__2-link-icon fa-solid fa-hand-point-left"></i></a>
-
                 </div>
             </div>
         </form>

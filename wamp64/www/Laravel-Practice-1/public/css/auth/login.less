@@ -25,7 +25,7 @@
         left: 0;
         height: 100vh;
         width: 100vw;
-        background-color: rgba(0, 140, 255, 0.8);
+        background-color: rgba(0, 141, 255, 0.8);
         z-index: -3;
     }
     &-content
@@ -34,8 +34,8 @@
         margin: 100px auto 0 auto;
         padding: 40px 50px;
         border-radius: 40px;
-        color: #fff;
-        background-color: rgba(24, 22, 22, 0.8);
+        color: #232323;
+        background-color: #fff;
         z-index: -2;
         &-header
         {
@@ -43,6 +43,10 @@
             font-size: 1.7em;
             text-align: center;
             margin-bottom: 50px;
+            &-title
+            {
+                text-transform: uppercase;
+            }
         }
         &-body
         {
@@ -52,26 +56,26 @@
                 &-icon
                 {
                     position: relative;
-                    color: #4f5356;
+                    color: #ababb0;
                     font-size: 19px;
                     top: -34px;
                     left: 15px;
                 }
                 &-input
                 {
-                    color: #fff;
+                    color: #9b9b9b;
                     font-size: 18px;
                     box-sizing: border-box;
                     width: 100%;
                     padding: 10px 15px 10px 45px;
-                    background-color: rgba(61, 68, 86, 0.6);
-                    border-radius: 50px;
-                    border: 1px solid #4f5356;
+                    background-color: #fff;
+                    border: none;
+                    border-bottom: 3px solid #ababb0;
                     outline: none;
                     &:focus
                     {
-                        background-color: rgba(84, 87, 103, 0.7);
-                        border: 1px solid #858686;
+                        background-color: rgb(236, 236, 236);
+                        border-bottom: 3px solid #249cff;
                     }
                     &::placeholder
                     {
@@ -81,16 +85,16 @@
                 &-label
                 {
                     position: relative;
-                    color: #4f5356;
+                    color: #ababb0;
                     top: -35px;
                     left: 25px;
                     cursor: text;
-                    transition: 1s;
+                    transition: 0.5s;
                 }
 
                 &-input:focus ~ &-label
                 {
-                    color: #fff;
+                    color: #249cff;
                     top: -80px;
                     left: -20px;
                 }
@@ -103,7 +107,7 @@
                 }
 
                 &-input:focus ~ &-icon{
-                    color: #fff;
+                    color: #249cff;
                 }
             }
             &-password__field
@@ -112,27 +116,26 @@
                 &-icon
                 {
                     position: relative;
-                    color: #4f5356;
+                    color: #ababb0;
                     font-size: 19px;
                     top: -34px;
                     left: 15px;
                 }
                 &-input
                 {
-                    color: #fff;
+                    color: #9b9b9b;
                     font-size: 18px;
                     box-sizing: border-box;
                     width: 100%;
                     padding: 10px 15px 10px 45px;
-                    background-color: rgba(61, 68, 86, 0.6);
-                    border-radius: 50px;
-                    border: 1px solid #4f5356;
+                    background-color: #fff;
+                    border: none;
+                    border-bottom: 3px solid #ababb0;
                     outline: none;
-                    transition: 0.5s;
                     &:focus
                     {
-                        background-color: rgba(84, 87, 103, 0.7);
-                        border: 1px solid #858686;
+                        background-color: rgb(236, 236, 236);
+                        border-bottom: 3px solid #249cff;
                     }
                     &::placeholder
                     {
@@ -142,15 +145,16 @@
                 &-label
                 {
                     position: relative;
-                    color: #4f5356;
+                    color: #ababb0;
                     top: -35px;
                     left: 25px;
                     cursor: text;
-                    transition: 1s;
+                    transition: 0.5s;
                 }
+
                 &-input:focus ~ &-label
                 {
-                    color: #fff;
+                    color: #249cff;
                     top: -80px;
                     left: -20px;
                 }
@@ -161,8 +165,9 @@
                     top: -80px;
                     left: -20px;
                 }
+
                 &-input:focus ~ &-icon{
-                    color: #fff;
+                    color: #249cff;
                 }
             }
 
@@ -201,12 +206,60 @@
                 margin: 0 0 40px 0;
                 &-remember__field
                 {
+                    display: flex;
+                    &-label__1
+                    {
+                        width: 45px;
+                        height: 25px;
+                        cursor: pointer;
+                        position: relative;
+                        &-input
+                        {
+                            display: none;
+                        }
+                        &-input:checked + &-slider
+                        {
+                            background-color: #44cc66;
+                        }
+                        &-slider
+                        {
+                            background-color: #ccc;
+                            position: absolute;
+                            border-radius: 100px;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            -webkit-transition: all 300ms ease;
+                            transition: all 300ms ease;
+                            &-knob
+                            {
+                                position: absolute;
+                                width: calc(25px - 6px);
+                                height: calc(25px - 6px);
+                                border-radius: 50%;
+                                left: 3px;
+                                top: 3px;
+                                background-color: #fff;
+                                -webkit-transition: all 300ms ease;
+                                transition: all 300ms ease;
+                            }
+                        }
+                        &-input:checked + &-slider &-slider-knob
+                        {
+                            left: calc(100% - 19px - 3px);
+                        }
+                    }
                     cursor: text;
                     margin: 0 auto 0 0;
-                    &-label
+                    &-label__2
                     {
-
+                        color: #ababb0;
+                        margin: 0 0 0 5px;
+                        font-size: 15px;
                     }
+
+
                 }
                 &-reset__password__field
                 {
@@ -217,7 +270,7 @@
                         text-decoration: none;
                         &:hover
                         {
-                            color: #fff;
+                            color: #249cff;
                         }
                     }
                 }
@@ -243,11 +296,11 @@
                     }
                     &:hover
                     {
-                        color: #fff;
+                        color: #249cff;
                     }
                     &:hover &-icon
                     {
-                        color: #fff;
+                        color: #249cff;
                         margin: 0 0 0 15px;
                     }
                 }
