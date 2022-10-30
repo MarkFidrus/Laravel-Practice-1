@@ -6,71 +6,69 @@
 {
     &-navigation
     {
-        &-menu
+        display: flex;
+        margin: 20px 40px;
+        &-item
         {
             display: flex;
-            justify-content: right;
-            list-style: none;
-            padding: 40px 30px;
-            &-item
+            align-items: center;
+            padding: 5px 5px;
+            margin: 0 10px;
+            font-size: 18px;
+            color: #fff;
+            border-radius: 20px;
+            border: 2px solid transparent;
+            text-decoration: none;
+            transition: 0.5s;
+            &-icon
             {
-                position: absolute;
-                padding: 5px 5px;
-                font-size: 18px;
-                color: #fff;
-                border-radius: 20px;
-                border: 2px solid transparent;
-                text-decoration: none;
+                margin: 0 10px 0 0;
+            }
+            &-text
+            {
+                margin: 0;
+                opacity: 0;
+                letter-spacing: -10px;
+                padding: 0;
                 transition: 0.5s;
-                &-icon
-                {
-                    margin: 0 10px 0 0;
-                }
-                &:hover
-                {
-                    border: 2px solid #fff;
-                    padding: 5px 15px;
-                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                }
-                &#galleriesHeaderBtn, &#loginHeaderBtn, &#registerHeaderBtn, &#logoutHeaderBtn
-                {
-                    top: 30px;
-                }
-                &#galleriesHeaderBtn{
-                    right: 400px;
-                    &:hover
-                    {
-                        right: 390px;
-                    }
-                }
-                &#loginHeaderBtn, &#loginHeaderBtn
-                {
-                    right: 260px;
-                    &:hover, &:focus
-                    {
-                        right: 250px;
-                    }
-                }
-                &#registerHeaderBtn, &#logoutHeaderBtn
-                {
-                    right: 90px;
-                    &:hover, &:focus
-                    {
-                        right: 80px;
-                    }
-                }
-                &#loginHeaderBtn:hover, &#loginHeaderBtn:focus,
-                &#registerHeaderBtn:hover, &#registerHeaderBtn:focus
-                {
-                    color: #fff;
-                    background-color: #0077ff;
-                    border: 2px solid #0077ff;
-                }
-                &#logoutHeaderBtn:hover, &#logoutHeaderBtn:focus
-                {
-                    color: #e30000;
-                    border: 2px solid #e30000;
-                }
+            }
+            &:hover
+            {
+                border: 2px solid #fff;
+                padding: 5px 15px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            &:hover &-text
+            {
+                opacity: 1;
+                letter-spacing: 0;
+            }
+            &#galleriesHeaderBtn, &#loginHeaderBtn, &#registerHeaderBtn, &#logoutHeaderBtn
+            {
+                top: 30px;
+            }
+            &#galleriesHeaderBtn{
+                margin: 0 0 0 auto;
+            }
+            &#loginHeaderBtn, &#loginHeaderBtn
+            {
+
+            }
+            &#registerHeaderBtn, &#logoutHeaderBtn
+            {
+
+            }
+            &#loginHeaderBtn:hover, &#loginHeaderBtn:focus,
+            &#registerHeaderBtn:hover, &#registerHeaderBtn:focus
+            {
+                color: #fff;
+                background-color: #0077ff;
+                border: 2px solid #0077ff;
+            }
+            &#logoutHeaderBtn:hover, &#logoutHeaderBtn:focus
+            {
+                color: #e30000;
+                border: 2px solid #e30000;
             }
         }
         &-brand

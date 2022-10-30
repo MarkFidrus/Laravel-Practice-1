@@ -9,7 +9,12 @@
   margin: 10px auto 10px 20px;
 }
 .footer__short-text {
-  margin: 10px auto;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 80%;
+  margin: 0 10%;
+  cursor: default;
 }
 .footer__short-text:hover {
   color: #efefef;
@@ -37,9 +42,11 @@
 }
 .footer__short-terms,
 .footer__short-contact__us,
-.footer__short-about__us,
-.footer__short-text {
+.footer__short-about__us {
   transition: 0.5s;
+}
+.footer__short-text {
+  transition: color 0.5s;
 }
 .footer__short-terms:hover,
 .footer__short-contact__us:hover,

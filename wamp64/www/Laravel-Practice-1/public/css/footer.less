@@ -11,7 +11,12 @@
     }
     &-text
     {
-        margin: 10px auto;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        width: 80%;
+        margin: 0 10%;
+        cursor: default;
         &:hover
         {
             color: #efefef;
@@ -38,9 +43,13 @@
             margin: 0 5px 0 0;
         }
     }
-    &-terms, &-contact__us, &-about__us, &-text
+    &-terms, &-contact__us, &-about__us
     {
         transition: 0.5s;
+    }
+    &-text
+    {
+        transition: color 0.5s;
     }
     &-terms:hover, &-contact__us:hover, &-about__us:hover,
     &-terms:focus, &-contact__us:focus, &-about__us:focus
