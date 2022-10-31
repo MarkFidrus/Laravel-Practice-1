@@ -43,6 +43,14 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('profile', '\App\Http\Controllers\ProfileController');
     Route::get('/profile/show/{id}', '\App\Http\Controllers\PhotoController@show')->name('profile');
 
+    Route::get('/contact_us', '\App\Http\Controllers\ContactController@contact')->name('contact');
+    Route::post('/contact_us', '\App\Http\Controllers\ContactController@send');
+
+    Route::get('/messages', '\App\Http\Controllers\PhotoController@show')->name('messages');
+    Route::get('/messages/show/{id}', '\App\Http\Controllers\PhotoController@show')->name('show_messages');
+
+    Route::get('/about_us', '\App\Http\Controllers\Controller@show')->name('profile');
+
     Auth::routes();
 
     Route::get('/logout','\App\Http\Controllers\Auth\LoginController@logout');
