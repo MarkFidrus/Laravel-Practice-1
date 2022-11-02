@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['middleware' => 'web'], function () {
-    Route::get('/', '\App\Http\Controllers\Controller@index')->name('home');
+    Route::get('/', '\App\Http\Controllers\HomeController@index')->name('home');
 
     Route::resource('gallery', '\App\Http\Controllers\GalleryController');
 
@@ -49,7 +49,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/messages', '\App\Http\Controllers\PhotoController@show')->name('messages');
     Route::get('/messages/show/{id}', '\App\Http\Controllers\PhotoController@show')->name('show_messages');
 
-    Route::get('/about_us', '\App\Http\Controllers\Controller@show')->name('profile');
+    Route::get('/about_us', '\App\Http\Controllers\HomeController@about')->name('about_us');
 
     Auth::routes();
 
