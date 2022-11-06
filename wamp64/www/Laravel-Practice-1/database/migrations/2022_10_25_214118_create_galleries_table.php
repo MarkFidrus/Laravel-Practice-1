@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('description');
             $table->string('cover_image');
             $table->integer('user_id');
+            $table->json('likes');
+            $table->json('comments');
             $table->json('viewership');
             $table->tinyinteger('status')->default(1);
             $table->timestamps();
