@@ -20,11 +20,11 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('home', ['cssName' => 'home', 'title' => 'Home']);
+        return view('home', ['cssName' => 'home.css', 'title' => 'Home']);
     }
 
     public function about()
     {
-        return view('common.about', ['cssName' => 'about', 'title' => 'About']);
+        return view('common.about', ['cssName' => 'about.css', 'title' => 'About']);
     }
 }

@@ -41,7 +41,7 @@ Route::group(['middleware' => 'web'], function () {
 
 
     Route::resource('profile', '\App\Http\Controllers\ProfileController');
-    Route::get('/profile/show/{id}', '\App\Http\Controllers\PhotoController@show')->name('profile');
+    Route::get('/profile/{id}', '\App\Http\Controllers\PhotoController@show')->name('profile');
 
     Route::get('/contact_us', '\App\Http\Controllers\ContactController@contact')->name('contact');
     Route::post('/contact_us', '\App\Http\Controllers\ContactController@send');
