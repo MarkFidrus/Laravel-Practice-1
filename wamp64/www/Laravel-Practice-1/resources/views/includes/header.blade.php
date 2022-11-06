@@ -1,7 +1,7 @@
 @section('header')
     <header class="header simple" id="header">
         <nav class="header-navigation">
-            <a class="header-navigation-brand"><i class="header-navigation-brand-icon fa-solid fa-fish-fins"></i><p class="header-navigation-brand-text">Fish Site</p></a>
+            <a class="header-navigation-brand" href="/"><i class="header-navigation-brand-icon fa-solid fa-fish-fins"></i><p class="header-navigation-brand-text">Fish Site</p></a>
             <div class="header-navigation-menu" id="menuIcon">
                 <i class="header-navigation-menu-icon fa-solid fa-bars"></i>
             </div>
