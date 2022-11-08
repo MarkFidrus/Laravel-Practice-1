@@ -50,7 +50,10 @@ Route::group(['middleware' => 'web'], function () {
 
 
     Route::resource('profile', '\App\Http\Controllers\ProfileController');
-    Route::get('/profile/{id}', '\App\Http\Controllers\PhotoController@show')
+    Route::get('/profile/{id}', '\App\Http\Controllers\ProfileController@index')
+        ->name('profile')
+        ->middleware('auth');
+    Route::post('/profile/{id}', '\App\Http\Controllers\ProfileController@set')
         ->name('profile')
         ->middleware('auth');
 

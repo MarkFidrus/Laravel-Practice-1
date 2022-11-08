@@ -4,6 +4,7 @@
   margin: 0 25%;
   padding: 10px;
   animation: swimInAndOut 5s linear forwards;
+  z-index: 100;
 }
 .alert_message_container.success {
   background-color: rgba(223, 240, 216, 0.7);
