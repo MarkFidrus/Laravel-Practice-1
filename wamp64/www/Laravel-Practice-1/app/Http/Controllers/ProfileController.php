@@ -10,7 +10,7 @@ class ProfileController extends Controller
 {
     public function index()
     {
-        $profileData = DB::table('users')->select('id', Auth::id());
+        $profileData = DB::table('users')->where('id', Auth::id())->first();
         return view('profile.index', ['cssName' => 'profile.css', 'title' => 'My profile'], compact('profileData'));
     }
 
