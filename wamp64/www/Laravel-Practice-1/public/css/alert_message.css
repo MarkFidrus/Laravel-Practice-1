@@ -1,5 +1,7 @@
 .alert_message_container {
   position: absolute;
+  display: flex;
+  align-items: center;
   width: 50%;
   margin: 0 25%;
   padding: 10px;
@@ -17,6 +19,11 @@
   color: #b94a48ff;
   border: 4px solid #b94a48ff;
   border-radius: 10px;
+}
+.alert_message_container-icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 0;
 }
 @keyframes swimInAndOut {
   0% {

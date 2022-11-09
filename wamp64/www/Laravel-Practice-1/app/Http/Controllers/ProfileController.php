@@ -8,10 +8,17 @@ use Illuminate\Support\Facades\DB;
 
 class ProfileController extends Controller
 {
-    public function index()
+    public function show($id)
     {
-        $profileData = DB::table('users')->where('id', Auth::id())->first();
-        return view('profile.index', ['cssName' => 'profile.css', 'title' => 'My profile'], compact('profileData'));
+        $profileData = DB::table('users')->where('id', $id)->first();
+        if ($profileData)
+        {
+            return view('profile.show', ['cssName' => 'profile.css', 'title' => $profileData->name], compact('profileData'));
+        }
+        else
+        {
+            return redirect('/')->with('message_text', 'User is not exist!')->with('message_type', 'error');
+        }
     }
 
     public function set(Request $request)

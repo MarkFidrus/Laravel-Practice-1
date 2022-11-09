@@ -8,5 +8,5 @@
     <link rel="stylesheet" href="{{ asset('css/'. $cssName.'') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/alert_message.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}" type="text/css">
-    <title>Laravel Practice - {{ $title }}</title>
+    <title>LP - {{ $title }}</title>
 </head>
