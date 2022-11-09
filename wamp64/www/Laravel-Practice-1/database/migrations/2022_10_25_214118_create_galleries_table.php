@@ -22,6 +22,7 @@ return new class extends Migration
             $table->json('likes');
             $table->json('comments');
             $table->json('viewership');
+            $table->json('search_terms');
             $table->tinyinteger('status')->default(1);
             $table->timestamps();
         });

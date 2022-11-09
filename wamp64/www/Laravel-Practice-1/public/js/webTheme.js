@@ -19,12 +19,12 @@ function currentWebTheme()
 
 function createWebTheme()
 {
-    localStorage.setItem('webTheme', 'simple');
+    localStorage.setItem('webTheme', 'origin');
 }
 
 let webThemeValue = localStorage.getItem('webTheme');
 
-if (webThemeValue === 'simple')
+if (webThemeValue === 'origin')
 {
     document.getElementById('styleCheckBox').checked = false;
 }
@@ -44,7 +44,7 @@ document.getElementById('styleCheckBox').addEventListener('click', (event ) => {
     }
     else
     {
-        localStorage.setItem('webTheme', 'simple');
+        localStorage.setItem('webTheme', 'origin');
     }
     document.getElementById('header').classList.add(localStorage.getItem('webTheme'));
     for (const section of sections) {

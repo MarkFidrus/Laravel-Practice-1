@@ -1,5 +1,5 @@
 @section('header')
-    <header class="header simple" id="header">
+    <header class="header" id="header">
         <nav class="header-navigation">
             <a class="header-navigation-brand" href="/"><i class="header-navigation-brand-icon fa-solid fa-fish-fins"></i><p class="header-navigation-brand-text">Fish Site</p></a>
             <div class="header-navigation-menu" id="menuIcon">

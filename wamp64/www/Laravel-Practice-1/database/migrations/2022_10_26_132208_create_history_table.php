@@ -16,7 +16,8 @@ return new class extends Migration
         Schema::create('history', function (Blueprint $table) {
             $table->id();
             $table->string('type');
-            $table->json('event_details');
+            $table->integer('changed_item_id');
+            $table->string('description');
             $table->timestamps();
         });
     }
