@@ -5,7 +5,7 @@
         <div class="home__container-text__container">
             <div class="home__container-text__container-bg">
                 <h1 class="home__container-text__container-bg-title">Welcome to</h1>
-                <h2 class="home__container-text__container-bg-subtitle">my practice project!</h2>
+                <h2 class="home__container-text__container-bg-subtitle">The Fish Site</h2>
             </div>
         </div>
         <div class="home__container-video__effect"></div>

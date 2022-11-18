@@ -1,8 +1,9 @@
 @include('includes/head')
 @include('includes/header')
-@include('includes.footer_short')
-@include('includes.footer_long')
-@include('includes/alert_message')
+@include('includes.footerShort')
+@include('includes.footerLong')
+@include('includes.toTop')
+@include('includes.alertMessage')
 @include('includes/scripts')
 
 
@@ -20,6 +21,8 @@
         @else
             @yield('footer_long')
         @endif
+
+        @yield('to_top')
 
 
         @yield('scripts')

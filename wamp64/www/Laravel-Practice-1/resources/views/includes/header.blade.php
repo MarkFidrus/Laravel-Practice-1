@@ -27,9 +27,10 @@
                             <a class="header-navigation-slide__menu-content-body-link" href="/login" id="loginBtn"><i class="header-navigation-slide__menu-content-body-link-icon fa-solid fa-arrow-right-to-bracket"></i><p class="header-navigation-slide__menu-content-body-link-text">Login</p></a>
                             <a class="header-navigation-slide__menu-content-body-link" href="/register" id="registerBtn"><i class="header-navigation-slide__menu-content-body-link-icon fa-solid fa-user-plus"></i><p class="header-navigation-slide__menu-content-body-link-text">Register</p></a>
                         @else
-                            <a class="header-navigation-slide__menu-content-body-link" href="/profile/{{ Auth::id() }}" id="profileBtn"><i class="header-navigation-slide__menu-content-body-link-icon fa-solid fa-user"></i><p class="header-navigation-slide__menu-content-body-link-text">
-                                {{ __('Profile') }}</p></a>
+                            <a class="header-navigation-slide__menu-content-body-link" href="/profile/{{ Auth::user()->id }}" id="profileBtn"><i class="header-navigation-slide__menu-content-body-link-icon fa-solid fa-user"></i><p class="header-navigation-slide__menu-content-body-link-text">
+                                {{ Auth::user()->name }}</p></a>
                             <a class="header-navigation-slide__menu-content-body-link" href="/admin_panel"><i class="header-navigation-slide__menu-content-body-link-icon fa-solid fa-user-shield"></i><p class="header-navigation-slide__menu-content-body-link-text">Admin panel</p></a>
+                            <a class="header-navigation-slide__menu-content-body-link" href="/users"><i class="header-navigation-slide__menu-content-body-link-icon fa-solid fa-users"></i><p class="header-navigation-slide__menu-content-body-link-text">Users</p></a>
                             <a class="header-navigation-slide__menu-content-body-link" href="/logout" id="logoutBtn"><i class="header-navigation-slide__menu-content-body-link-icon fa-solid fa-arrow-right-from-bracket"></i><p class="header-navigation-slide__menu-content-body-link-text">Logout</p></a>
                         @endif
                         <a class="header-navigation-slide__menu-content-body-link" href="/galleries"><i class="header-navigation-slide__menu-content-body-link-icon fa-regular fa-images"></i><p class="header-navigation-slide__menu-content-body-link-text">Galleries</p></a>

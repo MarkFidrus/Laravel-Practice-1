@@ -6,7 +6,7 @@
   margin: 0 25%;
   padding: 10px;
   animation: swimInAndOut 5s linear forwards;
-  z-index: 100;
+  z-index: 200;
 }
 .alert_message_container.success {
   background-color: rgba(223, 240, 216, 0.7);
@@ -18,6 +18,12 @@
   background-color: #f2dede;
   color: #b94a48ff;
   border: 4px solid #b94a48ff;
+  border-radius: 10px;
+}
+.alert_message_container.info {
+  border: 1px solid #bce8f1;
+  background-color: #d9edf7;
+  color: #3a87ad;
   border-radius: 10px;
 }
 .alert_message_container-icon {
@@ -51,4 +57,4 @@
     top: 40px;
   }
 }
-/*# sourceMappingURL=alert_message.css.map */
+/*# sourceMappingURL=alertMessage.css.map */

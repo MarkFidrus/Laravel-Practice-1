@@ -76,20 +76,20 @@
   cursor: text;
   transition: 0.5s;
 }
-.register__container.origin .register__container-content-body-username__field-input:focus ~ .register__container.origin .register__container-content-body-username__field-label {
+.register__container.origin .register__container-content-body-username__field-input:focus ~ .register__container-content-body-username__field-label {
   color: #249cff;
   top: -80px;
   left: -20px;
 }
-.register__container.origin .register__container-content-body-username__field-input:not(:placeholder-shown) ~ .register__container.origin .register__container-content-body-username__field-label {
+.register__container.origin .register__container-content-body-username__field-input:not(:placeholder-shown) ~ .register__container-content-body-username__field-label {
   color: #249cff;
   top: -80px;
   left: -20px;
 }
-.register__container.origin .register__container-content-body-username__field-input:not(:placeholder-shown):not(:focus) ~ .register__container.origin .register__container-content-body-username__field-label {
+.register__container.origin .register__container-content-body-username__field-input:not(:placeholder-shown):not(:focus) ~ .register__container-content-body-username__field-label {
   color: #ababb0;
 }
-.register__container.origin .register__container-content-body-username__field-input:focus ~ .register__container.origin .register__container-content-body-username__field-icon {
+.register__container.origin .register__container-content-body-username__field-input:focus ~ .register__container-content-body-username__field-icon {
   color: #249cff;
 }
 .register__container.origin .register__container-content-body-email__field {
@@ -128,20 +128,20 @@
   cursor: text;
   transition: 0.5s;
 }
-.register__container.origin .register__container-content-body-email__field-input:focus ~ .register__container.origin .register__container-content-body-email__field-label {
+.register__container.origin .register__container-content-body-email__field-input:focus ~ .register__container-content-body-email__field-label {
   color: #249cff;
   top: -80px;
   left: -20px;
 }
-.register__container.origin .register__container-content-body-email__field-input:not(:placeholder-shown) ~ .register__container.origin .register__container-content-body-email__field-label {
+.register__container.origin .register__container-content-body-email__field-input:not(:placeholder-shown) ~ .register__container-content-body-email__field-label {
   color: #249cff;
   top: -80px;
   left: -20px;
 }
-.register__container.origin .register__container-content-body-email__field-input:not(:placeholder-shown):not(:focus) ~ .register__container.origin .register__container-content-body-email__field-label {
+.register__container.origin .register__container-content-body-email__field-input:not(:placeholder-shown):not(:focus) ~ .register__container-content-body-email__field-label {
   color: #ababb0;
 }
-.register__container.origin .register__container-content-body-email__field-input:focus ~ .register__container.origin .register__container-content-body-email__field-icon {
+.register__container.origin .register__container-content-body-email__field-input:focus ~ .register__container-content-body-email__field-icon {
   color: #249cff;
 }
 .register__container.origin .register__container-content-body-password__field {
@@ -180,20 +180,20 @@
   cursor: text;
   transition: 0.5s;
 }
-.register__container.origin .register__container-content-body-password__field-input:focus ~ .register__container.origin .register__container-content-body-password__field-label {
+.register__container.origin .register__container-content-body-password__field-input:focus ~ .register__container-content-body-password__field-label {
   color: #249cff;
   top: -80px;
   left: -20px;
 }
-.register__container.origin .register__container-content-body-password__field-input:not(:placeholder-shown) ~ .register__container.origin .register__container-content-body-password__field-label {
+.register__container.origin .register__container-content-body-password__field-input:not(:placeholder-shown) ~ .register__container-content-body-password__field-label {
   color: #249cff;
   top: -80px;
   left: -20px;
 }
-.register__container.origin .register__container-content-body-password__field-input:not(:placeholder-shown):not(:focus) ~ .register__container.origin .register__container-content-body-password__field-label {
+.register__container.origin .register__container-content-body-password__field-input:not(:placeholder-shown):not(:focus) ~ .register__container-content-body-password__field-label {
   color: #ababb0;
 }
-.register__container.origin .register__container-content-body-password__field-input:focus ~ .register__container.origin .register__container-content-body-password__field-icon {
+.register__container.origin .register__container-content-body-password__field-input:focus ~ .register__container-content-body-password__field-icon {
   color: #249cff;
 }
 .register__container.origin .register__container-content-body-repassword__field {
@@ -232,20 +232,20 @@
   cursor: text;
   transition: 0.5s;
 }
-.register__container.origin .register__container-content-body-repassword__field-input:focus ~ .register__container.origin .register__container-content-body-repassword__field-label {
+.register__container.origin .register__container-content-body-repassword__field-input:focus ~ .register__container-content-body-repassword__field-label {
   color: #249cff;
   top: -80px;
   left: -20px;
 }
-.register__container.origin .register__container-content-body-repassword__field-input:not(:placeholder-shown) ~ .register__container.origin .register__container-content-body-repassword__field-label {
+.register__container.origin .register__container-content-body-repassword__field-input:not(:placeholder-shown) ~ .register__container-content-body-repassword__field-label {
   color: #249cff;
   top: -80px;
   left: -20px;
 }
-.register__container.origin .register__container-content-body-repassword__field-input:not(:placeholder-shown):not(:focus) ~ .register__container.origin .register__container-content-body-repassword__field-label {
+.register__container.origin .register__container-content-body-repassword__field-input:not(:placeholder-shown):not(:focus) ~ .register__container-content-body-repassword__field-label {
   color: #ababb0;
 }
-.register__container.origin .register__container-content-body-repassword__field-input:focus ~ .register__container.origin .register__container-content-body-repassword__field-icon {
+.register__container.origin .register__container-content-body-repassword__field-input:focus ~ .register__container-content-body-repassword__field-icon {
   color: #249cff;
 }
 .register__container.origin .register__container-content-footer {
